@@ -102,4 +102,9 @@ The script trains the model for 5 epochs and logs the training process using Ten
 To launch TensorBoard, run the following command in your terminal:
 tensorboard --logdir=logs/fit/20250214-174408
 
-##License
+#Patterns observed in the training and validation accuracy curves are the training accuracy increases steadily while the validation accuracy may plateau or fluctuate and if the gap between training and validation accuracy grows significantly, it may indicate overfitting.
+
+#TensorBoard used to detect overfitting by comparing training and validation loss curves if validation loss starts increasing while training loss decreases, overfitting is occurring.A large gap between training and validation accuracy suggests the model is memorizing training data instead of generalizing.
+
+#The effects of increasing the number of epochs are initially, performance improves as the model learns patterns and neyond a certain point, the validation accuracy may degrade while training accuracy continues increasing, indicating overfitting
+
